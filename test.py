@@ -104,5 +104,63 @@ list1 = ['android', 123, 1.23, 'hi']
 tuple1 = ('ros', 756, 2.23, 'join', 70.2)
 
 list1[2] = 1000  #列表能修改值
-tuple1[2] = 1000 #元组不能修改值
+#tuple1[2] = 1000 #元组不能修改值, 修改会报错
+
+#条件语句
+data = 10
+if (data >0 and data <5) or (data >=10 and data <20):
+    print ("Is True")
+else:
+    print (data)
+    print ("Is False")
+    
+#循环语句
+for letter in 'python':
+    print ('当前字母:', letter)
+
+fruits = ['banana', 'apple', 'mango']
+for fruit in fruits:
+    print ("当前水果:", fruit)
+
+print ("good bye")
+
+#通过序号索引迭代
+food = ['banana', 'apple', 'mango']
+for index in range(len(food)):
+    print ('当前水果: ', food[index])
+print ("good bye")
+
+#嵌套for循环语句
+for num in range(10,20):
+    for i in range(2,num):
+        if i%2 == 0:
+            print (i)
+        else:
+            break
+    
+#函数
+
+#函数说明
+def printinfo(name, age=35):
+    print ("Name: ", name)
+    print ("Age:", age)
+    return
+    
+#调用函数    
+printinfo(name="zhangsan", age=50)
+printinfo(name="lisi")
+
+
+#可写函数说明
+def printme( str ):
+   # 打印任何传入的字符串
+   print (str)
+   return
+ 
+# 调用函数
+printme("我要调用用户自定义函数!")
+printme("再次调用同一函数")
+
+
+
 
